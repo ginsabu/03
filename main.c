@@ -6,13 +6,19 @@
 int main(int argc, char *argv[]) {
 	
 	char c;
+	char c_next;
 	int i;
+	int i_next;
 	
-	printf("input number: ");
+	printf("Enter a character: ");
 	scanf("%c", &c);
 	
 	i = c - '0';
-	printf("The input number is %i\n", i);
-		
+	
+	c_next = c + 1;
+	i_next = c + 1 - '0';
+	
+	printf("The next character of %c (%i) is %c (%i)", c, i, c_next, i_next);
+	
 	return 0;
 }
