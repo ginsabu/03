@@ -5,20 +5,19 @@
 
 int main(int argc, char *argv[]) {
 	
-	char c;
-	char c_next;
-	int i;
-	int i_next;
+	float a;
+	float b;
+	float result;
 	
-	printf("Enter a character: ");
-	scanf("%c", &c);
+	printf("Enter numerator: ");
+	scanf("%f", &a);
 	
-	i = c - '0';
+	printf("Enter denominator: ");
+	scanf("%f", &b);
 	
-	c_next = c + 1;
-	i_next = c + 1 - '0';
+	result = a / b;
 	
-	printf("The next character of %c (%i) is %c (%i)", c, i, c_next, i_next);
+	printf("The result is %f", result);
 	
 	return 0;
 }
